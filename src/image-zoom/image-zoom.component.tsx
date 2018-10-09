@@ -399,6 +399,7 @@ export default class ImageViewer extends React.Component<Props, State> {
               const beforeScale = this.scale;
 
               // 开始缩放
+              this.props.zoomNum(zoom)
               this.scale = zoom;
               this.animatedScale.setValue(this.scale);
 
